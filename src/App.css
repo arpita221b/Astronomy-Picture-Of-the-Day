@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Itim&family=Josefin+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+
+
+     background-color:#FAF9FE ;
+ 
+}
+h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px auto 10px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.box{
+    width: 70%;
+    min-width: 200px;
+    position: relative;
+    margin: 71px auto;
+    /* padding: 10px 4px 10px 4px ; */
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+/* font-size: 16px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.image{
+
+    width: 70%;
+    border-radius:16px;
+    /* position: relative; */
+    float: right;
+    /* padding: 0px 4px ; */
+    padding: 10px;
+
+}
+.heading{
+    margin: 5px 10px 10px 15px;  
+}
+.date{
+    margin: 15px;
+
+ }
+.explanation{
+    margin: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .image{
+      width: 100%;
+      float: none;
+    
+      padding: 0;
+
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}

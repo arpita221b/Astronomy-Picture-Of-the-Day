@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import imgsrc from "./Components/pexels-patrick-rose-5155404.jpg";
+import "./App.css";
+import NasaImg from "./Components/NasaImg";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    return (
+    
+        <div>
+        <h1>
+            Astronomy Picture Of the Day!
+        </h1>
+
+        <NasaImg/>
+        
+        </div>
+
+        
+    );
 }
-
-export default App;
